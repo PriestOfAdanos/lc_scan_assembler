@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'lc_scan_builder'
+package_name = 'lc_scan_assembler'
 
 setup(
     name=package_name,
@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'lc_scan_builder_node = lc_scan_builder.lc_scan_builder_node:main'
+            'lc_scan_assembler = lc_scan_assembler.lc_scan_assembler:main'
         ],
     },
 )
