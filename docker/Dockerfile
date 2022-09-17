@@ -17,10 +17,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   ros-galactic-geodesy ros-galactic-pcl-ros ros-galactic-nmea-msgs \
   ros-galactic-sensor-msgs \
   ros-galactic-sensor-msgs-py \
-  ros-galactic-octomap-mapping \
-  python3-pip python3-dev python3-setuptools python3-wheel
+  python3-pip python3-dev python3-setuptools python3-wheel 
 
-RUN pip3 install RPi.GPIO transforms3d bluedot
 RUN mkdir -p /opt/$USERNAME/src
 
 RUN apt-get clean \
